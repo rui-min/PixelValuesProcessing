@@ -25,29 +25,29 @@ Based on this information, function analysis_display() should calculate and conc
 * the probability that a red color represents a safe region in the images is 100%
 * the probability that a green color represents a safe region in the images is 60%
 
-# Sample output
+# Sample input and output
 red 99% gcc images.c functions.c -Wall
 
 red 100% a.out < image1.dat
 
-scanning pixel data for a new image.....
+`scanning pixel data for a new image.....`
 
 `------------- display database ---------------`
 
-[0]: concatenated by 000***** 000***** 000***** (e.g., BLACK, which has r,g,b value 00000000 00000000 00000000)
+`[0]: concatenated by 000***** 000***** 000***** (e.g., BLACK, which has r,g,b value 00000000 00000000 00000000)`
 
-probability that this color represents safe region is (0/4) * (4/12) / (3/12) --> 0.000 * 0.333 / 0.250 = 0.000
+`probability that this color represents safe region is (0/4) * (4/12) / (3/12) --> 0.000 * 0.333 / 0.250 = 0.000`
 
-[56]: concatenated by 000***** 111***** 000***** (e.g., GREEN, which has r,g,b value 00000000 11111111 00000000)
+`[56]: concatenated by 000***** 111***** 000***** (e.g., GREEN, which has r,g,b value 00000000 11111111 00000000)`
 
-probability that this color represents safe region is (1/4) * (4/12) / (2/12) --> 0.250 * 0.333 / 0.167 = 0.500
+`probability that this color represents safe region is (1/4) * (4/12) / (2/12) --> 0.250 * 0.333 / 0.167 = 0.500`
 
-[448]: concatenated by 111***** 000***** 000***** (e.g., RED, which has r,g,b value 11111111 00000000 00000000)
+`[448]: concatenated by 111***** 000***** 000***** (e.g., RED, which has r,g,b value 11111111 00000000 00000000)`
 
-probability that this color represents safe region is (3/4) * (4/12) / (3/12) --> 0.750 * 0.333 / 0.250 = 1.000
+`probability that this color represents safe region is (3/4) * (4/12) / (3/12) --> 0.750 * 0.333 / 0.250 = 1.000`
 
-[511]: concatenated by 111***** 111***** 111***** (e.g., WHITE, which has r,g,b value 11111111 11111111 11111111)
+`[511]: concatenated by 111***** 111***** 111***** (e.g., WHITE, which has r,g,b value 11111111 11111111 11111111)`
 
-probability that this color represents safe region is (0/4) * (4/12) / (4/12) --> 0.000 * 0.333 / 0.333 = 0.000
+`probability that this color represents safe region is (0/4) * (4/12) / (4/12) --> 0.000 * 0.333 / 0.333 = 0.000`
 
-Totally 4 colors are stored in database
+`Totally 4 colors are stored in database`
