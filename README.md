@@ -10,7 +10,7 @@ The images may have different sizes, but each image consists of a safe region su
 
 
 # A comprehensive example
-
+![images](/sampleImages.JPG)
 
 You may have multiple images as data source. In such cases, we can simply take the sum for each occurrence, and compute as before. Consider the two images shown above. The first image is the same as above. For the second image, assume it has 4× 3 pixels, and that the pixels in the middle 2 columns (i.e, pixel 1,2,5,6,9,10) represent the safe region in the image. Others represent unsafe region. For this example, after scanning all the pixel data, you should correctly calculate that: there are totally 12 + 12 pixels, among them, 4 + 6 = 10 are ‘safe pixels’. There are 3 + 4 = 7 red pixels, which are all ‘safe pixels’. There are 2 +3 = 5 green pixels, among them 1+ 2 = 3 are safe pixels.
 Based on this information, function analysis_display() should calculate and conclude that
