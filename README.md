@@ -2,6 +2,10 @@
 Scan pixel values from .dat files(they can be opened & edited as .txt files) and calculate positional probabilities. Sample running can be done with following terminal command lines:
   1. >gcc images.c functions.c -Wall     
   2. >a.out < image1.dat
+or in Bash Shell run the script file:
+$ datScript.sh
+and then follow instructions after invoking the shell script. Below is **demo of how the script works**:
+![demoScript](/demo_script.JPG)
 
 # Safe and Unsafe Region
 The images may have different sizes, but each image consists of a safe region surrounded by two unsafe regions, as illustrated below where shaded areas in the images are safe regions, whereas white areas are unsafe regions. (A safe region can represent, for example, a bridge, and unsafe regions are rivers, or, a safe region represents a path where no landmines are placed and unsafe regions are full of landmines.)
