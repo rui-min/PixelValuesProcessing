@@ -2,7 +2,8 @@
 Scan pixel values from .dat files(they can be opened & edited as .txt files) and calculate positional probabilities. Sample running can be done with following terminal command lines:
   1. >gcc images.c functions.c -Wall     
   2. >a.out < image1.dat
-or in Bash Shell run the script file:
+
+Or in Bash Shell run the script file:
 $ datScript.sh
 and then follow instructions after invoking the shell script. Below is **demo of how the script works**:
 ![demoScript](/demo_script.JPG)
